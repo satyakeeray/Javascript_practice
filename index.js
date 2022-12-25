@@ -1,6 +1,8 @@
 // Import stylesheets
 import './style.css';
-
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+let outputDiv = document.getElementById('output');
+let startYear = 2014;
+let endYear = 2050;
+for (let year = startYear; year <= endYear; year++) {
+  outputDiv.innerHTML += '\n' + year;
+}
